@@ -40,7 +40,11 @@ var map = new google.maps.Map(d3.select("#map").node(), {
   mapTypeId: google.maps.MapTypeId.ROADMAP
 });
 
-var photosUrls = ["bbqlondon.json", "bbqinlondon.json", "londonbbq.json"];
+var photosUrls = [
+    "photos/bbqlondon.json",
+    "photos/bbqinlondon.json",
+    "photos/londonbbq.json"
+  ];
 
 var overlayPhotos = function(photosUrl) {
   d3.json(photosUrl, function(data) {
